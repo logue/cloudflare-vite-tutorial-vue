@@ -1,0 +1,31 @@
+{
+  "name": "cloudflare-vite-tutorial-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "^0.1.16",
+    "@cloudflare/workers-types": "^4.20250321.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.3",
+    "vue-tsc": "^2.2.8",
+    "wrangler": "^4.4.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
+  }
+}
